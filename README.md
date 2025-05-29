@@ -67,7 +67,7 @@ Swagger UI will be available at: http://localhost:5001/
 
 ---
 
-## 🧪 Example API Calls
+## 🧪 API Calls
 
 ### 🔹 Customer Management
 - `POST /customers` – Create individual/corporate customer
