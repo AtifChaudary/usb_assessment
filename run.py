@@ -14,7 +14,7 @@ def create_app():
     app.config.from_pyfile('config.py')
 
     # Initialize Auth
-    init_auth(app)
+    # init_auth(app)
 
     # Enable Swagger
     swagger_config = {
