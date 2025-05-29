@@ -62,25 +62,43 @@ PASSWORD = 'your_password_here'
 python run.py or flask run
 ```
 
-The API will start at: `http://localhost:5001/`
+The API will be available at: http://localhost:5001/
+Swagger UI will be available at: http://localhost:5001/
 
 ---
 
 ## 🧪 Example API Calls
 
-### POST /customers
-Create a customer.
+### 🔹 Customer Management
+- `POST /customers` – Create individual/corporate customer
+- `PUT /customers/<customer_id>`– Update customer
+- `GET /customers/<customer_id>` – Get customer by ID
+- `GET /customers` – List all customers
+- `GET /customers/active` – List only active customers
 
-### GET /spot-rates?fromCurrency=USD&toCurrency=INR
-Fetch real-time SPOT rate.
+### 🔹 Entity Documents Management
+- `POST /entities/<customer_id>/entities/<entity_id>/documents` – Upload entity document
+- `GET /entities/<customer_id>/entities/<entity_id>/documents` – List entity documents
+- `DELETE /entities/<customer_id>/entities/<entity_id>/documents/<doc_id>` – Delete a document
 
-### GET /accounts/<client_id>
-Retrieve Buckzy account details.
+### 🔹 SPOT Rates
+- `GET /spot-rates?fromCurrency=USD&toCurrency=INR` – Fetch exchange rate
 
-### POST /entities/<customer_id>
-Add an entity to a registered customer.
+### 🔹 Buckzy Account Management
+- `POST /accounts` – Create account
+- `GET /accounts/<client_id>` – Get account details
+- `GET /accounts/<client_id>/balance` – Get account balance
 
-### POST /payouts
-Initiate a payout transaction.
+### 🔹 Payout Transactions
+- `POST /payouts` – Initiate payout
+- `GET /payouts/status/<txn_id>` – Check payout status
 
 ---
+
+## 📘 Swagger Documentation
+
+Visit http://localhost:5001/ for the Swagger UI with all API specs.
+
+
+---
+
