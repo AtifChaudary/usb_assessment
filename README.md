@@ -30,8 +30,8 @@ project_root/
 
 ### 1. Clone the repository & navigate into it
 ```
-git clone https://github.com/AtifChaudary/usb_assessment.git
-cd usb_assessment
+git clone https://github.com/AtifChaudary/uab_assessment.git
+cd uab_assessment
 ```
 
 ### 2. Create virtual environment (optional but recommended)
